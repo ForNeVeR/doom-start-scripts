@@ -12,6 +12,7 @@ $gzdoom = $config.gzdoom
 & "$PSScriptRoot/Start-GZDoom.ps1" `
     -gzdoom $gzdoom `
     -IWAD 'hexen' `
+    -Files 'Guncaster.pk3' `
     -Connect:$Connect `
     -Server:$Server `
     -SaveGame $SaveGame
