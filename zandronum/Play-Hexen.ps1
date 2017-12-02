@@ -15,11 +15,13 @@ if ($Play) {
         -stdout `
         -iwad hexen `
         -connect 127.0.0.1:666
-} elseif ($Serve) {
+} elseif ($Server) {
     & $zandronum `
         -stdout `
-        -iwad hexen `
-        -port 666
+        -host `
+        '+sv_hostname' CodingDoom `
+        -port 666 `
+        -iwad hexen
 } else {
     throw 'Invalid arguments'
 }
